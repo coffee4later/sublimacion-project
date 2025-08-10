@@ -12,8 +12,10 @@
         <li><a href="<?php echo __DIR__; ?>/productos" class="link-menu">Conòcenos</a></li>
         <li><a href="<?php echo __DIR__; ?>/contacto" class="link-menu">Catàlogo</a></li>
         <li><a href="<?php echo __DIR__; ?>/contacto" class="link-menu">Contacto</a></li>
+        <li><a href="<?php echo __DIR__; ?>/contacto" class="link-menu">inicia sesiòn</a></li>
+
         <li><button>
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-bars"></i>
             </button></li>
     </ul>
 </nav>
