@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
 
 :root {
     --fondo-1: #f0f0f0;
@@ -13,6 +14,7 @@
     --fuente-eslogan: 'Ankatoria', serif;
     --fuente-neutra: 'Open-sans', sans-serif;
     --fuente-texto: 'Open-sans', sans-serif;
+    --fuente-logo: 'Cormorant Infant', serif;
 }
 
 @font-face {
@@ -23,6 +25,24 @@
         url('../fonts/Anaktoria.otf') format('truetype');
 
 }
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ...existing code...
+
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+} */
+
+/* ...existing code... */
+
 body {
     background-color: var(--fondo-1);
     color: var(--color-primario);
@@ -30,6 +50,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: white;
     color: black;
@@ -44,20 +65,114 @@ header {
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
+/* ...Barra de navegacion... */
+
+
+.navbar-inicio {
+    background-color: white;
+    /* padding: 5px; */
+    height: 55px;
+    border-color: #757575;
+    border-style: solid;
+    border-width: 1.8px;
+    align-items: center;
+    align-content: center;
     display: flex;
+    justify-content: space-between;
 }
 
-nav li {
-    margin-right: 20px;
+.navbar-logo {
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    transition: 0.4s;
+    a{
+        text-decoration: none;
+        display: flex;
+        color: black;
+        align-items: center;
+        gap: 10px;
+        margin-right: 15px;
+    }
+}
+
+.navbar-logo:hover{
+    background-color: #e6e6e6;
+}
+
+.navbar-logo a img {
+    height: 40px;
+    width: auto;
+    margin-left: 15px;
+    
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: space-around;
+    margin: 0;
+    height: 100%;
+    align-items: center;
 
 }
 
-.link-menu  {
+.navbar-menu li {
+    list-style: none;
     text-decoration: none;
     color: black;
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+    display: inline;
+    align-content: center;
+    transition: 0.35s;
+}
+
+.navbar-menu li:hover {
+
+    color: rgb(66, 66, 66);
+    background-color: #dadada;
+
+}
+
+.navbar-menu li:last-child:hover {
+    background-color: white;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-menu li button {
+    background-color: white;
+    border-color: transparent;
+    transition: 0.4s;
+
+    i {
+        font-size: 23px;
+        color: black;
+    }
+}
+
+.navbar-menu li button i:hover {
+    text-decoration: none;
+    color: rgb(103, 103, 103);
+}
+
+.link-menu {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: var(--fuente-neutra);
+}
+
+.tipografia-logo {
+    font-family: var(--fuente-logo);
+    font-size: 30px;
     font-weight: bold;
+    color: var(--color-primario);
 }
 
 .titulo {
